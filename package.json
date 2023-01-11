@@ -1,7 +1,7 @@
 {
-  "name": "actionsheet-react",
-  "version": "1.0.14",
-  "description": "🌟A lightweight and flexible action sheet component for the web",
+  "name": "@keenplify/actionsheet-react",
+  "version": "1.0.15",
+  "description": "🌟A lightweight and flexible action sheet component for the web, fixed by keenplify",
   "main": "build/index.js",
   "module": "build/index.es.js",
   "jsnext:main": "build/index.es.js",
@@ -36,5 +36,5 @@
   ],
   "author": "mohit23x",
   "license": "ISC",
-  "homepage": "https://github.com/mohit23x/actionsheet-react"
+  "homepage": "https://github.com/keenplify/actionsheet-react"
 }
