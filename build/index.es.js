@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useRef, useImperativeHandle, useEffect, Fragment } from 'react';
 
-/*! *****************************************************************************
+/******************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -108,7 +108,7 @@ var ActionSheet = React.forwardRef(function (_a, ref) {
     var updatePosition = function () {
         if (animationRef.current !== undefined) {
             if (null !== sheetRef.current) {
-                sheetRef.current.style.transform = "translate3d(0, " + masterOffset.current + "px, 0)";
+                sheetRef.current.style.transform = "translate3d(0, ".concat(masterOffset.current, "px, 0)");
                 return true;
             }
             return false;
@@ -160,5 +160,5 @@ var ActionSheet = React.forwardRef(function (_a, ref) {
                 })), { left: 0, width: "100%", backgroundColor: "#fbfbfb", borderTopLeftRadius: 16, borderTopRightRadius: 16, touchAction: "none", zIndex: zIndex + 1 }), sheetStyle), onMouseDown: mouseEnable ? onMouseStart : function () { return undefined; }, onMouseMove: mouseEnable ? onMouseMove : function () { return undefined; }, onMouseUp: mouseEnable ? onSwipeEnd : function () { return undefined; }, onTouchStart: touchEnable ? onSwipeStart : function () { return undefined; }, onTouchMove: touchEnable ? onSwipeMove : function () { return undefined; }, onTouchEnd: touchEnable ? onSwipeEnd : function () { return undefined; } }, children)));
 });
 
-export default ActionSheet;
+export { ActionSheet as default };
 //# sourceMappingURL=index.es.js.map

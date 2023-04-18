@@ -4,8 +4,7 @@ Object.defineProperty(exports, '__esModule', { value: true });
 
 var React = require('react');
 
-function _interopNamespace(e) {
-    if (e && e.__esModule) return e;
+function _interopNamespaceDefault(e) {
     var n = Object.create(null);
     if (e) {
         Object.keys(e).forEach(function (k) {
@@ -13,20 +12,18 @@ function _interopNamespace(e) {
                 var d = Object.getOwnPropertyDescriptor(e, k);
                 Object.defineProperty(n, k, d.get ? d : {
                     enumerable: true,
-                    get: function () {
-                        return e[k];
-                    }
+                    get: function () { return e[k]; }
                 });
             }
         });
     }
-    n['default'] = e;
+    n.default = e;
     return Object.freeze(n);
 }
 
-var React__namespace = /*#__PURE__*/_interopNamespace(React);
+var React__namespace = /*#__PURE__*/_interopNamespaceDefault(React);
 
-/*! *****************************************************************************
+/******************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
@@ -133,7 +130,7 @@ var ActionSheet = React__namespace.forwardRef(function (_a, ref) {
     var updatePosition = function () {
         if (animationRef.current !== undefined) {
             if (null !== sheetRef.current) {
-                sheetRef.current.style.transform = "translate3d(0, " + masterOffset.current + "px, 0)";
+                sheetRef.current.style.transform = "translate3d(0, ".concat(masterOffset.current, "px, 0)");
                 return true;
             }
             return false;
